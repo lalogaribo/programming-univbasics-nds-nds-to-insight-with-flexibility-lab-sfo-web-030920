@@ -71,7 +71,6 @@ def gross_per_studio(collection)
   studio = {}
   # puts collection
   collection.each do |std|
-    puts std
     # movie = movies_with_director_key(std[:director_name], collection)
     if !studio[std[:studio]]
       studio[std[:studio]] = std[:worldwide_gross]
@@ -79,7 +78,7 @@ def gross_per_studio(collection)
       studio[std[:studio]] += std[:worldwide_gross]
     end
   end
-  studio
+  pp studio
 end
 
 def movies_with_directors_set(source)
