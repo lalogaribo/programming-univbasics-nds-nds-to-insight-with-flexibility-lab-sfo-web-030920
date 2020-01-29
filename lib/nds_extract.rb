@@ -95,8 +95,6 @@ def movies_with_directors_set(source)
   directors_movies = []
   source.each do |director|
     director_name = director[:name]
-      # movie_title = movie[:title]
-      # directors_movies << [{title: movie_title, director_name: director_name }]
       directors_movies << movies_with_director_key(director_name, director[:movies] )
   end
     pp directors_movies
