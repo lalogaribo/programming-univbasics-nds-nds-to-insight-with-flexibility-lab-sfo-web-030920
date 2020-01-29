@@ -78,7 +78,7 @@ def gross_per_studio(collection)
       studio[std[:studio]] += std[:worldwide_gross]
     end
   end
-  pp studio
+   studio
 end
 
 def movies_with_directors_set(source)
@@ -97,7 +97,7 @@ def movies_with_directors_set(source)
     director_name = director[:name]
       directors_movies << movies_with_director_key(director_name, director[:movies] )
   end
-    pp directors_movies
+   directors_movies
 end
 
 # ----------------    End of Your Code Region --------------------
